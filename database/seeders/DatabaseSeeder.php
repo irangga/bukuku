@@ -26,7 +26,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $customer = User::create([
-            'name' => 'Danang Allam Ibrahim',
+            'name' => 'Danang',
             'email' => 'danang@bukuku.test',
             'password' => Hash::make('password'),
             'is_admin' => false,

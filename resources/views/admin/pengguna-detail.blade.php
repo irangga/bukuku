@@ -78,7 +78,7 @@
                             @endforeach
                         </ul>
                     </td>
-                    <td class="p-space-md font-bold">Rp {{ number_format($order->total_price, 0, ',', '.') }}</td>
+                    <td class="p-space-md font-bold">Rp {{ number_format($order->total_amount, 0, ',', '.') }}</td>
                     <td class="p-space-md">
                         @if($order->status == 'menunggu')
                             <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-800">Menunggu</span>
