@@ -45,7 +45,12 @@
                     <td class="p-space-md">
                         <div class="flex items-center gap-3">
                             <div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center font-semibold text-on-surface-variant shrink-0">{{ substr($user->name, 0, 2) }}</div>
-                            <span class="font-semibold text-on-surface">{{ $user->name }}</span>
+                            <div class="flex items-center gap-2">
+                                <span class="font-semibold text-on-surface">{{ $user->name }}</span>
+                                @if($user->is_admin)
+                                <span class="px-1.5 py-0.5 rounded text-[10px] bg-primary-container text-on-primary-container font-semibold">Admin</span>
+                                @endif
+                            </div>
                         </div>
                     </td>
                     <td class="p-space-md">
