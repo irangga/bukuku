@@ -94,7 +94,7 @@
                 <div>
                     <h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-space-sm">Sinopsis</h2>
                     <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                        {{ $book->description }}
+                        {!! nl2br(e($book->description)) !!}
                     </p>
                 </div>
 
