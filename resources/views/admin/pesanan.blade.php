@@ -46,7 +46,7 @@
         Sedang Dikemas <span class="ml-1 {{ request('status') == 'dikemas' ? 'bg-primary text-on-primary' : 'bg-surface-container-highest text-on-surface' }} px-1.5 py-0.5 rounded-full text-[10px]">{{ $countDikemas }}</span>
     </a>
     <a href="{{ url('/admin/pesanan') }}?status=dikirim{{ request('search') ? '&search='.request('search') : '' }}" class="px-space-md py-space-sm border-b-2 {{ request('status') == 'dikirim' ? 'border-primary text-primary' : 'border-transparent text-on-surface-variant hover:text-on-surface' }} font-label-md text-label-md font-semibold transition-colors">
-        Sedang Dikirim
+        Sedang Dikirim <span class="ml-1 {{ request('status') == 'dikirim' ? 'bg-primary text-on-primary' : 'bg-surface-container-highest text-on-surface' }} px-1.5 py-0.5 rounded-full text-[10px]">{{ $countDikirim }}</span>
     </a>
 </div>
 

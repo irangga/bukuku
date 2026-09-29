@@ -36,8 +36,9 @@ class OrderController extends Controller
 
         $countMenunggu = Order::where('status', 'menunggu')->count();
         $countDikemas = Order::where('status', 'dikemas')->count();
+        $countDikirim = Order::where('status', 'dikirim')->count();
 
-        return view('admin.pesanan', compact('orders', 'countMenunggu', 'countDikemas'));
+        return view('admin.pesanan', compact('orders', 'countMenunggu', 'countDikemas', 'countDikirim'));
     }
 
     /**
